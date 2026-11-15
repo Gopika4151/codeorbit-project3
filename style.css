@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #263b65;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+}
+
+.upload-box {
+    background: #f3f5fc;
+    padding: 30px;
+    border: 2px dashed #5145cd;
+    border-radius: 15px;
+}
+
+.upload-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.upload-box h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.upload-box p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 13px 25px;
+    background: #5145cd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 10px;
+}
+
+button:hover {
+    background: #372ba8;
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+#preview {
+    display: none;
+    width: 250px;
+    max-width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.result-box {
+    margin-top: 25px;
+    padding: 25px;
+    background: #f8f8ff;
+    border-radius: 15px;
+}
+
+.result-box h2 {
+    color: #263b65;
+    margin-bottom: 15px;
+}
+
+#status {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.result-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.result-item span {
+    font-weight: bold;
+    color: #5145cd;
+}
+
+.result-item p {
+    margin-top: 8px;
+    color: #555;
+}
+
+footer {
+    margin-top: 25px;
+    color: #888;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+@media(max-width: 500px) {
+
+    .container {
+        padding: 18px;
+    }
+
+    .upload-box {
+        padding: 20px;
+    }
+
+}

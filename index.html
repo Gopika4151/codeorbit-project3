@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Image Classification</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🤖 AI Image Classifier</h1>
+            <p>Upload an image and let AI identify it!</p>
+        </header>
+
+        <div class="upload-box">
+
+            <div class="upload-icon">📸</div>
+
+            <h2>Upload Your Image</h2>
+
+            <p>Select an image from your device</p>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+                hidden
+            >
+
+            <button onclick="document.getElementById('imageInput').click()">
+                Choose Image
+            </button>
+
+            <img id="preview" alt="Uploaded image preview">
+
+            <button id="classifyBtn" onclick="classifyImage()" disabled>
+                Classify Image
+            </button>
+
+        </div>
+
+        <div class="result-box">
+
+            <h2>Classification Results</h2>
+
+            <p id="status">Upload an image to start classification.</p>
+
+            <div id="results"></div>
+
+        </div>
+
+        <footer>
+            <p>Powered by TensorFlow.js and MobileNet</p>
+            <p>CodeOrbit Tech - AI Internship Project</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
